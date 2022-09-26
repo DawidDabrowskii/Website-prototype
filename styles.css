@@ -1,0 +1,143 @@
+:root{
+    --border: rgb(59, 59, 59);
+    --text: rgb(121, 121, 121);
+    --background: rgb(7, 7, 7);
+    --pinki: rgb(202, 3, 228);
+    --belt: rgb(16, 2, 49);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 21px;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+}
+.logo{
+    background: var(--belt);
+    opacity: 0.8;
+    width: 100%;
+    max-height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20%;
+}
+.Dawid{
+    font-weight: bold;
+    font-size: 35px;
+}
+.left-side{
+    background: rgb(28, 185, 190);
+    background-image: url("../Images/BackgroundPhoto.jpg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40vw;
+    display: flex;
+}
+.right-side{
+    width: 60vw;
+    background: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+.wall-text{
+    width: 100%;
+    height: 25%;
+    padding: 4%;
+}
+.wall-text :first-child{
+    margin-top: 1%;
+}
+.wall-text :nth-child(2){
+    margin-top: 2%;
+}
+.input-details{
+    background: var(--background);
+    width: 100%;
+    height: 27%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.input-details :first-child{
+    margin-top: 1%;
+    margin-bottom: 5px;
+    padding-left: 2%;
+    width: 100%;
+}
+input{
+    height: 20px;
+    border-radius: 3px;
+    border: 1px solid var(--border);
+    width: 85%;
+    margin-left: 10px;
+    background: #000;
+}
+label{
+    font-size: 12px;
+    color: var(--text)
+}
+.input-box{
+    min-width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+.create_acc{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-top: 3%;
+    padding-left: 5%;
+}
+.create_acc > #submit{
+    border: 1px solid var(--pinki);
+    width: 25%;
+    height: 25%;
+    font-weight: 700;
+    color: var(--pinki);
+}
+.create_acc div :nth-child(1){
+    text-decoration: none;
+    min-width: 100%;
+    padding-left: 1%;
+}
+a{
+    color: var(--pinki);
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+@media (max-width: 960px){
+    .right-side{
+        width: 100vw;
+        justify-content: center;
+    }
+    .left-side{
+        min-width: 100%;
+    }
+    .input-details{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 50%;
+    }
+    .logo{
+        min-height: 25%;
+        top: 40%;
+        
+    }
+}
